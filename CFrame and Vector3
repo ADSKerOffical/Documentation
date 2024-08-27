@@ -1,0 +1,24 @@
+CFrame and Vector3 are functions for moving objects
+CFrame stores the position and orientation of an object
+Vector3 only stores the position of the object
+Therefore their property and needs will be different
+
+For example a script that moves a local player through a CFrame:
+
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(20, 50, 10) -- moves around X, Y, Z
+-- If you want to use Vector3 then put HumanoidRootPart.Position = Vector3.new(20, 50, 10)
+
+
+You can also add new coordinates to other coordinates
+Here is an example script:
+
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0, 20, 0) -- Raises the local player up
+-- If you want to use CFrame then put HumanoidRootPart.CFrame = HumanoidRootPart.CFrame * CFrame.new(0, 20, 0)
+
+
+If you want to flip an object then use Orientation:
+
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.Orientation = Vector3.new(20, 190, 95) -- this is just an example, don't use it on the player
