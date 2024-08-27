@@ -31,4 +31,3 @@ Here is an example of these scripts:
 
 game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge -- inf
 game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.MaxHealth
-                                RootPart
