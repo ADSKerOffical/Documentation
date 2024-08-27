@@ -1,0 +1,34 @@
+Hello everyone, and today in this file I will talk about Humanoid characters
+                            Physical properties
+Here is a regular script for speed:
+
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50 -- default 16
+
+
+If you want to change the humanoid speed twice without knowing the current speed then you can use this:
+
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed * 2
+
+
+You can also use a script to change the jump strength:
+
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100 -- default 50
+
+
+But it won't work if you set humanoid.UseJumpPower = false
+In this case you will either set it to true or use JumpHeight:
+
+
+game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 25 -- default ≈10
+
+
+Also you can change health, max health, hip height and so on
+Here is an example of these scripts:
+
+
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge -- inf
+game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.MaxHealth
+                                RootPart
